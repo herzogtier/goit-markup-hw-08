@@ -1,0 +1,36 @@
+/*класс для того чтобы отодвинуть блок "Присоеденяйтесь"*/
+.footer-join-us {
+    margin-left: 69px;
+
+    /*класс для того чтобы отодвинуть список иконок от заголовка*/
+    &-list {
+        margin-top: 21px;
+    }
+
+    /*класс для выравнивания иконок*/
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*класс для того чтобы убрать крайнюю геометрию у иконок*/
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+/*Класс для белого заголовка в футере*/
+.footer-header-join-us {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $alternative-text-color;
+}
+
+/*Класс для того, чтобы иконки соцсетей стали флекс-элементами*/
+.social-flex-container {
+    display: flex;
+    align-items: center;
+}

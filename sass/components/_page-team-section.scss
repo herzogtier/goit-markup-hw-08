@@ -1,0 +1,56 @@
+/*Задание цвета фона секции наша команда*/
+.team-section {
+    background-color: $team-section-bgr-color;
+}
+
+/*оформление карточки участника команды*/
+.team-list-item {
+    background-color: $alternative-text-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/*паддинги карты участника команды*/
+.team-card {
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+    padding-left: 32px;
+}
+
+/*Имя цчастника команды*/
+.team-header-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-text-color;
+    margin-bottom: 10px;
+}
+
+/*
+класс для свойств параграфов на странице индекс в секции команды
+*/
+
+.team-paragraph-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-paragraph-color;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+/*класс для флексы элементов списка соцсетей*/
+.team-socnetwork-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-socials-item {
+    width: auto;
+    height: auto;
+}

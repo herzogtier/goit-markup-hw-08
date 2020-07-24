@@ -1,0 +1,21 @@
+.footer-address {
+    width: 100%;
+}
+
+.footer-text-paragraph,
+.footer-link-address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer-text-paragraph {
+    color: $alternative-text-color;
+}
+.footer-link-address {
+    display: block;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+}

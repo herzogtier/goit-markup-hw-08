@@ -1,0 +1,74 @@
+/*класс со свойствами блока подписки*/
+.footer-subscribe {
+    margin-left: 94px;
+    width: 100%;
+
+    /*класс со свойствами формы*/
+    &-form {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 21px;
+    }
+
+    /*класс со свойствами поля ввода*/
+    &-input {
+        margin-right: 12px;
+        padding: 15px 16px;
+        width: 360px;
+
+        background-color: $footer-bgr-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        /*класс со свойствами поля ввода при фокусе*/
+        &:focus-within {
+            outline: none;
+        }
+    }
+}
+
+/*класс для текста заголовка подписки*/
+.footer-header-subscribe {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $alternative-text-color;
+}
+
+/*класс для описания свойств кнопки Подписаться в футере*/
+.footer-link-button {
+    display: flex;
+    align-items: center;
+    background-color: $main-accent-color;
+    color: $alternative-text-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 29px;
+
+    line-height: 30px;
+    min-height: 50px;
+    border: none;
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer-send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+}

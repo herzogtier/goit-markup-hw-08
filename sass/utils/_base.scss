@@ -1,0 +1,162 @@
+/*Применение бокс модели для всего документа HTML*/
+html {
+    box-sizing: border-box;
+}
+
+/*Применение сейства шрифтов ко всему документу*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Убираем нижнюю линию для всех ссылок в документе*/
+a {
+    text-decoration: none;
+}
+
+/*Делаем картинки блочными элементами со 100% шириной по умолчанию*/
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Убираем маржины по умолчанию для всех заголовков документа*/
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*У списков убираем маркеры, маржины и паддинги по умолчанию*/
+.list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Утилитарны класс контейнер для разметки страницы */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.link-button {
+    background-color: $main-accent-color;
+    color: $alternative-text-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.section-index-paddings {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*класс для свойств заголовков Н2 на странице индекс*/
+
+.main-header2-style {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-text-color;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+/*даем ссылкам в навигации и контактах хедера разметку и убираем крайнюю геометрию*/
+.header-link-item {
+    width: 100%;
+    min-height: 80px;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+/*Утилитарные классы стилей для иконок соцсетей*/
+.socials-link,
+.team-socials-link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.socials-link {
+    color: $alternative-text-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $main-accent-color;
+    }
+}
+
+.team-socials-link {
+    color: $default-socials-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $main-accent-color;
+
+        & .socials-icon {
+            fill: $alternative-text-color;
+        }
+    }
+}
+
+/*Классы для описания свойств свг файлов иконок соцсетей*/
+.socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/*универсальный класс выравнивания лист-айтемов*/
+.universal-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-break-styles {
+    display: block;
+    color: $main-text-color;
+}
+
+.text-header2-style {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: $header-text-color;
+}
+
+.text-paragraph-style {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: $main-paragraph-color;
+}

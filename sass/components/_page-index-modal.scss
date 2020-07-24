@@ -1,0 +1,324 @@
+/*Фон при открытии модального окна*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /*класс задействуется для скрытия модального окна*/
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/*само модальное окно и его оформление и появление*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    max-width: 530px;
+    max-height: 580px;
+    padding: 40px;
+
+    background-color: $alternative-text-color;
+
+    /*Заголовок модального окна*/
+    & h2 {
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $header-text-color;
+
+        margin-bottom: 12px;
+    }
+}
+
+/*кнопка с крестиком в углу модалки - для закрытия*/
+
+.modal-svg-closewindow {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $alternative-text-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus,
+    &:hover.svg-close-icon,
+    &:focus.svg-close-icon {
+        cursor: pointer;
+        outline: none;
+        fill: $main-accent-color;
+    }
+}
+
+/*Выравнимание элементов формы*/
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /*Оформление инпутов*/
+    & input {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    /*оформление кнопки модалки*/
+    &.link-button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding-left: 55px;
+        padding-right: 55px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &.link-button:focus {
+        outline: none;
+        background-color: $button-focus-bgr;
+    }
+}
+
+/*Див для групировки инпутов и лейблов*/
+
+.modal-wrapper {
+    position: relative;
+    margin-top: 30px;
+
+    &:focus-within svg {
+        fill: $main-accent-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/*Класс для позиционирвоания свг картинки*/
+.modal-svg {
+    position: absolute;
+    top: 14px;
+    left: 19px;
+    margin-right: 8px;
+}
+
+/* набор правил оформления позволяющий при вводе в инпут убирать лейбл и менять ему цвет*/
+.modal-input {
+    display: block;
+    width: 100%;
+    padding-left: 42px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $main-paragraph-color;
+
+    &:focus {
+        border-color: $main-accent-color;
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus + .modal-label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+
+        letter-spacing: 0.01em;
+
+        color: $main-accent-color;
+        transform: translateY(-40px) translateX(16px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:not(:placeholder-shown) + .modal-label {
+        transform: translateY(-40px) translateX(16px);
+    }
+}
+
+/*лейблы к инпутам на модалке*/
+.modal-label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(42px);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $main-paragraph-color;
+}
+
+/*блок группировки текстарея с лейблом*/
+.modal-wrapper-comment {
+    position: relative;
+    margin-top: 30px;
+}
+
+/*оформление текстарея*/
+.modal-textarea-comment {
+    width: 100%;
+    height: 100%;
+    padding: 12px 16px;
+
+    resize: none;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $main-paragraph-color;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:focus {
+        border-color: $main-accent-color;
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus + .comment-modal-label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+
+        letter-spacing: 0.01em;
+
+        color: $main-accent-color;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:not(:placeholder-shown) + .comment-modal-label,
+    &:focus + .comment-modal-label {
+        transform: translateY(-20px) translateX(16px);
+    }
+}
+
+/*оформление лейблы техтарея*/
+.comment-modal-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(12px) translateX(16px);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $main-paragraph-color;
+}
+
+/*обертка для чекбокса*/
+
+.modal-condition-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    padding-left: 14px;
+    padding-right: 11px;
+}
+
+/*выравнивание элементов внутри лейблы чекбокса*/
+.checkbox-field {
+    display: inline-flex;
+    align-items: center;
+}
+
+/*прячем оригинальный чекбокс*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+
+    &-label {
+        display: inline-flex;
+        align-items: center;
+        color: var(--main-paragraph-color);
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+
+    & ~ &-label::before {
+        content: '';
+        display: block;
+        margin-right: 7px;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $main-text-color;
+        border-radius: 3px;
+        flex-shrink: 0;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:checked ~ &-label::before {
+        background-color: $main-accent-color;
+        border-color: transparent;
+        background-image: url('../images/modal-svg/bird.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.condition-link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: $main-accent-color;
+    margin-left: 4px;
+}

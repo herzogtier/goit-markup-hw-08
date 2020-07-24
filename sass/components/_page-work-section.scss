@@ -1,0 +1,33 @@
+/*класс расчитывающий равномерную ширину каждого айтема секции Наши работы*/
+.work-list-item {
+    width: calc((100% - 60px) / 3);
+
+    /*класс для стилизации текста в параграфе данной секции*/
+    & p {
+        margin: 0px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: $alternative-text-color;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+/*классы для позиционирования элементов карточки*/
+
+.work-card {
+    position: relative;
+    z-index: -1;
+
+    & p {
+        position: absolute;
+        min-width: 100%;
+        bottom: 0px;
+        left: 0px;
+    }
+}

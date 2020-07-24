@@ -1,0 +1,11 @@
+/*Задание фона футеру*/
+.footer-site {
+    background-color: $footer-bgr-color;
+}
+
+/*делаем обертки внутри футера флекс элементами и выравниваем их*/
+.footer-flex-container {
+    display: flex;
+    padding-top: 48px;
+    align-items: baseline;
+}

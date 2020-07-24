@@ -1,0 +1,20 @@
+@import './utils/variables'; /*импорт переменных*/
+@import './utils/normalize'; /*Подключение нормалайза*/
+@import './utils/base'; /*импорт базовых стилей всего сайта*/
+@import './components/page-header'; /*Импорт стилей Хедера страницы*/
+@import './components/page-header-nav'; /*Импорт разметки навигации сайта*/
+@import './components/page-header-nav-list'; /*Импорт стилей ссылок навигации*/
+@import './components/page-header-contact-list'; /*Импорт стилей ссылок контактов навигации*/
+@import './components/page-logo'; /*импорт стилей логотипа*/
+@import './components/page-hero-section'; /*импорт стилей блока Герой*/
+@import './components/page-advantages-section'; /* импорт стилей секции преимуществ*/
+@import './components/page-work-section'; /*импорт стилей секции Наши работы*/
+@import './components/page-team-section'; /*импорт стилей секции Наша команда*/
+@import './components/page-costomer-section'; /*импорт стилей секции постоянных клиентов*/
+@import './components/page-index-modal'; /*импорт стилей модального окна*/
+@import './components/page-footer'; /*Импорт стилей Футера страницы*/
+@import './components/page-footer-address'; /*стили адрессов футера*/
+@import './components/page-footer-join-us'; /*стили блока Присоеденяйтесь*/
+@import './components/page-footer-subscribe'; /*стили блока подписки*/
+@import './components/page-portfolio-nav'; /*Навигация по проектам страницы портфолио*/
+@import './components/page-portfolio-list'; /*Секция мейн страницы портфолио*/

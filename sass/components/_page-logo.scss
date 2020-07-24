@@ -1,0 +1,10 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: $main-text-color;
+
+    &-primary {
+        color: $main-accent-color;
+    }
+}

@@ -1,0 +1,39 @@
+/*Отодвинуть контактные данные хедера вправо*/
+.header-contact {
+    margin-left: auto;
+
+    /*окрашиваем иконки контактов в цвет параграфов на странице*/
+    &-icon {
+        margin-right: 10px;
+        fill: $main-paragraph-color;
+    }
+
+    /*Делаем элементы списка контактов - флекс элементами*/
+    &-list {
+        display: flex;
+    }
+}
+
+/*Задаем стили текста ссылок и свг картинок + эффекты ховера и фокуса*/
+
+.link-contact-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: $main-paragraph-color;
+    line-height: 80px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & svg {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+        color: $main-accent-color;
+        & svg {
+            fill: $main-accent-color;
+        }
+    }
+}

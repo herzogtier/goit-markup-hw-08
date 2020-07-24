@@ -1,0 +1,65 @@
+.header-link-list {
+    display: flex;
+    margin-left: 85px;
+}
+
+.link-header-text {
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: $header-text-color;
+    line-height: 80px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $main-accent-color;
+    }
+}
+
+/*Синяя полоска внизу ссылок на текущей странице*/
+.current {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        height: 4px;
+        width: 100%;
+
+        background-color: $main-accent-color;
+        border-radius: 2px;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/*Синяя полоска внизу ссылок эфект ховер*/
+.link-header-line {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        height: 4px;
+        width: 100%;
+
+        background-color: $main-accent-color;
+        border-radius: 2px;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}

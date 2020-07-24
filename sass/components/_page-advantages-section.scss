@@ -1,0 +1,39 @@
+/*
+класс для элементов листа секции преимуществ
+*/
+
+.advantages-list-item {
+    width: calc((100% - 90px) / 4);
+
+    & h3 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $header-text-color;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $main-paragraph-color;
+    }
+}
+
+/*класс для свойств контейнера картинок секции преимуществ*/
+.advantages-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $advantages-bgr-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}

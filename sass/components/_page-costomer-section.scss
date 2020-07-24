@@ -1,0 +1,33 @@
+/*автоматическая ширина и высота карточек постоянных клиентов*/
+.regular-customer-list-item {
+    width: auto;
+    height: auto;
+}
+
+/*оформление и выравнивание элементов внутри ссылки, а также события фокуса и ховера*/
+.regular-customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $default-socials-color;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $main-accent-color;
+
+        & .regular-customer-icon {
+            fill: $main-accent-color;
+        }
+    }
+}
+
+/*свойства иконок постоянных клиентов*/
+.regular-customer-icon {
+    fill: $default-socials-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
