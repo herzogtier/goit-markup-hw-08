@@ -35,13 +35,25 @@ h4 {
     margin: 0px;
 }
 
-/* Утилитарны класс контейнер для разметки страницы */
+/* Утилитарный класс контейнер для разметки страницы */
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    // max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and(min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .link-button {
@@ -132,8 +144,13 @@ h4 {
 
 /*универсальный класс выравнивания лист-айтемов*/
 .universal-list-item {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+
+    @media screen and(min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .link-break-styles {

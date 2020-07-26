@@ -18,3 +18,5 @@
 @import './components/page-footer-subscribe'; /*стили блока подписки*/
 @import './components/page-portfolio-nav'; /*Навигация по проектам страницы портфолио*/
 @import './components/page-portfolio-list'; /*Секция мейн страницы портфолио*/
+
+@import './utils/breakpoints'; /*ПОДКЛЮЧЕНИЕ ТОЧЕК ПЕРЕЛОМА АДАПТИВНОЙ ВЕРСТКИ*/

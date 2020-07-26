@@ -401,13 +401,30 @@ h4 {
   margin: 0px;
 }
 
-/* Утилитарны класс контейнер для разметки страницы */
+/* Утилитарный класс контейнер для разметки страницы */
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .link-button {
@@ -504,12 +521,20 @@ h4 {
 
 /*универсальный класс выравнивания лист-айтемов*/
 .universal-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .universal-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .link-break-styles {
@@ -675,6 +700,8 @@ h4 {
 
 /*Импорт стилей ссылок контактов навигации*/
 .logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: bold;
@@ -688,10 +715,9 @@ h4 {
 /*импорт стилей логотипа*/
 /* класс описывающий размеры и оформление блока Герой*/
 .hero-container {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
   padding-left: 15px;
   padding-right: 15px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), color-stop(0%, rgba(47, 48, 58, 0.8))), url("../images/header-img.jpg");
@@ -734,7 +760,7 @@ h4 {
 класс для элементов листа секции преимуществ
 */
 .advantages-list-item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
 }
 
 .advantages-list-item h3 {
@@ -821,6 +847,19 @@ h4 {
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
+  }
+  .team-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .team-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 /*паддинги карты участника команды*/
@@ -1572,4 +1611,8 @@ h4 {
 }
 
 /*Секция мейн страницы портфолио*/
+/*переменная для задания ширины вьюпорта мобильных устройств*/
+/*переменная для задания ширины вьюпорта планшетов*/
+/*переменная для задания ширины вьюпорта ПК*/
+/*ПОДКЛЮЧЕНИЕ ТОЧЕК ПЕРЕЛОМА АДАПТИВНОЙ ВЕРСТКИ*/
 /*# sourceMappingURL=main.css.map */
