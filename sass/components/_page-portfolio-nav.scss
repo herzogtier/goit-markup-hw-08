@@ -1,13 +1,13 @@
 /*навигация по проетам страницы портфолио*/
-.nav-porfolio-project {
-    margin-top: 174px;
-    justify-content: center;
+// .nav-porfolio-project {
+//     margin-top: 60px;
+//     justify-content: center;
 
-    /*убираемм крайнюю геометрию в списке проектов*/
-    &-item:not(:last-child) {
-        margin-right: 8px;
-    }
-}
+//     /*убираемм крайнюю геометрию в списке проектов*/
+//     &-item:not(:last-child) {
+//         margin-right: 8px;
+//     }
+// }
 
 .nav-project-styles {
     font-style: normal;

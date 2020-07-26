@@ -10,7 +10,15 @@
     padding-bottom: 60px;
     // align-items: baseline;
 
-    & div:not(:last-child) {
-        margin-bottom: 60px;
+    // & div:not(:last-child) {
+    //     margin-bottom: 60px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 76px;
+        padding-right: 89px;
     }
 }

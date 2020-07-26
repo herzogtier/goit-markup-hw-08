@@ -1,4 +1,18 @@
 .nav-flex-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: left;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    justify-content: left;
+
+    /*убираемм крайнюю геометрию в списке проектов*/
+    &-item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
