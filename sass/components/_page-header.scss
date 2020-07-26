@@ -1,7 +1,15 @@
 .header-flex-container {
-    position: relative;
+    // position: relative;
+    // margin-bottom: 40px;
+    // margin-top: 60px;
     // display: flex;
     // align-items: center;
+
+    @media screen and (min-width: 768px) {
+        // position: static;
+        display: flex;
+        // justify-content: left;
+    }
 }
 
 // .nav_menu_item {

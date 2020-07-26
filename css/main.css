@@ -463,7 +463,6 @@ h4 {
 /*даем ссылкам в навигации и контактах хедера разметку и убираем крайнюю геометрию*/
 .header-link-item {
   width: 100%;
-  min-height: 80px;
 }
 
 .header-link-item:not(:last-child) {
@@ -571,8 +570,12 @@ h4 {
 }
 
 /*импорт базовых стилей всего сайта*/
-.header-flex-container {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .header-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /*Импорт стилей Хедера страницы*/
@@ -588,9 +591,6 @@ h4 {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-bottom: 40px;
-  margin-top: 60px;
-  justify-content: left;
   /*убираемм крайнюю геометрию в списке проектов*/
 }
 
@@ -600,9 +600,9 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .nav-flex-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -688,9 +688,24 @@ h4 {
 }
 
 .header-contact-list {
+  padding-top: 21px;
+  padding-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 /*Задаем стили текста ссылок и свг картинок + эффекты ховера и фокуса*/
@@ -720,6 +735,12 @@ h4 {
 
 .link-contact-text:hover svg, .link-contact-text:focus svg {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .link-contact-text {
+    line-height: 14px;
+  }
 }
 
 /*Импорт стилей ссылок контактов навигации*/

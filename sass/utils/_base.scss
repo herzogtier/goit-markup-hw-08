@@ -93,12 +93,21 @@ h4 {
 /*даем ссылкам в навигации и контактах хедера разметку и убираем крайнюю геометрию*/
 .header-link-item {
     width: 100%;
-    min-height: 80px;
+    // min-height: 80px;
 
     &:not(:last-child) {
         margin-right: 50px;
     }
 }
+
+// .header-contact-item {
+//     // width: 100%;
+//     // min-height: 80px;
+
+//     &:not(:last-child) {
+//         margin-right: 50px;
+//     }
+// }
 
 /*Утилитарные классы стилей для иконок соцсетей*/
 .socials-link,

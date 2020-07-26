@@ -10,7 +10,19 @@
 
     /*Делаем элементы списка контактов - флекс элементами*/
     &-list {
+        padding-top: 21px;
+        padding-bottom: 21px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-item {
+        @media screen and (min-width: 768px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -35,5 +47,9 @@
         & svg {
             fill: $main-accent-color;
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        line-height: 14px;
     }
 }
