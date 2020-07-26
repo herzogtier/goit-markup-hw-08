@@ -5,6 +5,10 @@
 .advantages-list-item {
     width: 100%;
 
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+
     & h3 {
         font-weight: bold;
         font-size: 14px;
@@ -24,10 +28,25 @@
         letter-spacing: 0.03em;
         color: $main-paragraph-color;
     }
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 30px;
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+        }
+
+        width: calc((100% - 60px) / 2);
+    }
 }
 
 /*класс для свойств контейнера картинок секции преимуществ*/
 .advantages-img-container {
+    // display: block;
     display: flex;
     align-items: center;
     justify-content: center;

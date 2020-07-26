@@ -444,8 +444,8 @@ h4 {
 }
 
 .section-index-paddings {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*класс для свойств заголовков Н2 на странице индекс*/
@@ -763,6 +763,10 @@ h4 {
   width: 100%;
 }
 
+.advantages-list-item:not(:first-child) {
+  margin-top: 30px;
+}
+
 .advantages-list-item h3 {
   font-weight: bold;
   font-size: 14px;
@@ -781,6 +785,19 @@ h4 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list-item {
+    margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
+  }
+  .advantages-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .advantages-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 /*класс для свойств контейнера картинок секции преимуществ*/
@@ -900,8 +917,13 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-socnetwork-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-socials-item {
@@ -910,10 +932,29 @@ h4 {
 }
 
 /*импорт стилей секции Наша команда*/
+.regular-customer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*автоматическая ширина и высота карточек постоянных клиентов*/
 .regular-customer-list-item {
-  width: auto;
-  height: auto;
+  margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
+}
+
+.regular-customer-list-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.regular-customer-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 /*оформление и выравнивание элементов внутри ссылки, а также события фокуса и ховера*/
@@ -927,7 +968,6 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1308,22 +1348,28 @@ h4 {
 
 /*делаем обертки внутри футера флекс элементами и выравниваем их*/
 .footer-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 48px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-flex-container div:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 /*Импорт стилей Футера страницы*/
 .footer-address {
   width: 100%;
+  text-align: center;
+}
+
+.footer-address address {
+  margin-top: 20px;
 }
 
 .footer-text-paragraph,
 .footer-link-address {
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1344,7 +1390,8 @@ h4 {
 /*стили адрессов футера*/
 /*класс для того чтобы отодвинуть блок "Присоеденяйтесь"*/
 .footer-join-us {
-  margin-left: 69px;
+  margin-left: auto;
+  margin-right: auto;
   /*класс для того чтобы отодвинуть список иконок от заголовка*/
   /*класс для выравнивания иконок*/
 }
@@ -1372,6 +1419,7 @@ h4 {
 
 /*Класс для белого заголовка в футере*/
 .footer-header-join-us {
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -1387,31 +1435,30 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*стили блока Присоеденяйтесь*/
 /*класс со свойствами блока подписки*/
 .footer-subscribe {
-  margin-left: 94px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   /*класс со свойствами формы*/
   /*класс со свойствами поля ввода*/
 }
 
 .footer-subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: block;
   margin-top: 21px;
 }
 
 .footer-subscribe-input {
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 360px;
+  width: 100%;
   background-color: #2f303a;
   font-style: normal;
   font-weight: normal;
@@ -1434,6 +1481,7 @@ h4 {
 
 /*класс для текста заголовка подписки*/
 .footer-header-subscribe {
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -1443,6 +1491,8 @@ h4 {
 
 /*класс для описания свойств кнопки Подписаться в футере*/
 .footer-link-button {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

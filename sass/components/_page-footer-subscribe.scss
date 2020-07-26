@@ -1,20 +1,20 @@
 /*класс со свойствами блока подписки*/
 .footer-subscribe {
-    margin-left: 94px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 
     /*класс со свойствами формы*/
     &-form {
-        display: flex;
-        align-items: flex-end;
+        display: block;
         margin-top: 21px;
     }
 
     /*класс со свойствами поля ввода*/
     &-input {
-        margin-right: 12px;
+        margin-bottom: 20px;
         padding: 15px 16px;
-        width: 360px;
+        width: 100%;
 
         background-color: $footer-bgr-color;
         font-style: normal;
@@ -38,6 +38,7 @@
 
 /*класс для текста заголовка подписки*/
 .footer-header-subscribe {
+    text-align: center;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -47,6 +48,9 @@
 
 /*класс для описания свойств кнопки Подписаться в футере*/
 .footer-link-button {
+    margin-left: auto;
+    margin-right: auto;
+
     display: flex;
     align-items: center;
     background-color: $main-accent-color;

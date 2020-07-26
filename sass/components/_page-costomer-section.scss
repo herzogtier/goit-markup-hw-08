@@ -1,7 +1,25 @@
+.regular-customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /*автоматическая ширина и высота карточек постоянных клиентов*/
 .regular-customer-list-item {
-    width: auto;
-    height: auto;
+    //     width: auto;
+    //     height: auto;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+    &:nth-child(2n + 1) {
+        margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+    // @media screen and(min-width: 768px) {
+
+    // }
 }
 
 /*оформление и выравнивание элементов внутри ссылки, а также события фокуса и ховера*/
@@ -9,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
     height: 90px;
 
     border: 1px solid $default-socials-color;

@@ -5,7 +5,12 @@
 
 /*делаем обертки внутри футера флекс элементами и выравниваем их*/
 .footer-flex-container {
-    display: flex;
-    padding-top: 48px;
-    align-items: baseline;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // align-items: baseline;
+
+    & div:not(:last-child) {
+        margin-bottom: 60px;
+    }
 }

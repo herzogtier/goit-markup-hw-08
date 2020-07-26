@@ -1,9 +1,15 @@
 .footer-address {
     width: 100%;
+    text-align: center;
+
+    & address {
+        margin-top: 20px;
+    }
 }
 
 .footer-text-paragraph,
 .footer-link-address {
+    margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

@@ -61,7 +61,11 @@
 /*класс для флексы элементов списка соцсетей*/
 .team-socnetwork-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 .team-socials-item {
