@@ -1,4 +1,13 @@
 .header-flex-container {
-    display: flex;
-    align-items: center;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+}
+
+.nav_menu_item {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

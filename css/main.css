@@ -564,12 +564,16 @@ h4 {
 
 /*импорт базовых стилей всего сайта*/
 .header-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+}
+
+.nav_menu_item {
+  content: '';
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*Импорт стилей Хедера страницы*/
@@ -705,6 +709,7 @@ h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: bold;
+  line-height: 60px;
   color: #000000;
 }
 
