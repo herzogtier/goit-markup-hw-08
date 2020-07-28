@@ -1,15 +1,16 @@
 .header-link-list {
     display: flex;
-    margin-left: 85px;
+    flex-direction: column;
+    // margin-left: 85px;
 }
 
 .link-header-text {
     position: relative;
     display: flex;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     color: $header-text-color;
-    line-height: 80px;
+    line-height: 21px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

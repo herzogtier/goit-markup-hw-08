@@ -105,12 +105,18 @@ h4 {
 
 /*даем ссылкам в навигации и контактах хедера разметку и убираем крайнюю геометрию*/
 .header-link-item {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    // width: 100%;
     // min-height: 80px;
 
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &:not(:last-child) {
+    //     margin-right: 50px;
+    // }
 }
 
 // .header-contact-item {
