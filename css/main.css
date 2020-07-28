@@ -590,12 +590,16 @@ h4 {
 }
 
 /*импорт базовых стилей всего сайта*/
-@media screen and (min-width: 768px) {
-  .header-flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.header-flex-container {
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*Импорт стилей Хедера страницы*/
@@ -603,14 +607,6 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   /*убираемм крайнюю геометрию в списке проектов*/
 }
 
@@ -620,9 +616,9 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .nav-flex-container {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1549,8 +1545,15 @@ h4 {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-left: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-address {
+    width: 100%;
     margin: 0px;
     text-align: left;
   }
@@ -1587,7 +1590,7 @@ h4 {
 }
 
 .footer-join-us-list {
-  margin-top: 21px;
+  margin-top: 20px;
 }
 
 .footer-join-us-item {
@@ -1633,6 +1636,12 @@ h4 {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-header-join-us {
+    text-align: left;
+  }
+}
+
 /*Класс для того, чтобы иконки соцсетей стали флекс-элементами*/
 .social-flex-container {
   display: -webkit-box;
@@ -1659,6 +1668,15 @@ h4 {
 .footer-subscribe-form {
   display: block;
   margin-top: 21px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .footer-subscribe-input {
@@ -1696,6 +1714,23 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-input {
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-right: 12px;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-left: 94px;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 /*класс для текста заголовка подписки*/
 .footer-header-subscribe {
   text-align: center;
@@ -1704,6 +1739,12 @@ h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-header-subscribe {
+    text-align: left;
+  }
 }
 
 /*класс для описания свойств кнопки Подписаться в футере*/
@@ -1794,7 +1835,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .portfolio-projects {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
   .portfolio-projects:nth-child(2n + 1) {
     margin-right: 30px;
