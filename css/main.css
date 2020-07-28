@@ -761,6 +761,16 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 60px;
+}
+
+.header-contact-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -780,7 +790,7 @@ h4 {
   font-size: 14px;
   font-weight: 500;
   color: #757575;
-  line-height: 80px;
+  line-height: 21px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
