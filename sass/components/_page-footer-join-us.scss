@@ -25,6 +25,13 @@
         margin-top: 5px;
         margin-right: 0px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 69px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
 }
 
 /*Класс для белого заголовка в футере*/

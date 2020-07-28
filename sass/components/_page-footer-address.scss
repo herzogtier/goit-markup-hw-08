@@ -9,10 +9,19 @@
         margin-top: 20px;
     }
 
-    @media screen and(min-width: 768px) {
-        margin-left: 0px;
+    // @media screen and(min-width: 768px) {
+    //     margin-left: 0px;
+    // }
+
+    @media screen and(min-width: 1200px) {
+        margin: 0px;
+        text-align: left;
     }
 }
+
+// .footer-address address {
+//     margin-top: 20px;
+// }
 
 .footer-text-paragraph,
 .footer-link-address {

@@ -21,4 +21,12 @@
         padding-left: 76px;
         padding-right: 89px;
     }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        align-items: baseline;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
 }
