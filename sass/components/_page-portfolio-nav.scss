@@ -9,6 +9,23 @@
 //     }
 // }
 
+.portfolio-main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 34px;
+    }
+}
+
 .nav-project-styles {
     font-style: normal;
     font-weight: bold;
