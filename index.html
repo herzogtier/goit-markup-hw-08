@@ -21,7 +21,7 @@
                         <span>Studio</span>
                     </a>
 
-                    <div class="menu-container" data-menu>
+                    <div class="menu-container" id="menu-container" data-menu>
                         <ul class="list header-link-list">
                             <li class="header-link-item">
                                 <a class="current link-header-text" href="./index.html">
@@ -63,7 +63,7 @@
                     </div>
                 </nav>
                 <button type="button" class="menu-header" aria-expanded="false" data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-controls="menu-container">
                         <use class="icon-cross" href="./sprite.svg#icon-cross"></use>
                         <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
                     </svg>
@@ -76,7 +76,7 @@
         <!--Главный блок страницы!-->
 
         <main>
-            <!-- <div class="hero-container">
+            <div class="hero-container">
                 <section class="hero-section">
                     <h1 class="hero-caption">
                         эффективные решения <br />
@@ -84,11 +84,11 @@
                     </h1>
                     <button class="link-button" data-open-modal>Заказать услугу</button>
                 </section>
-            </div> -->
+            </div>
 
             <!-- Модальное окно "Сделать заказ" -->
 
-            <!-- <div class="backdrop is-hidden" data-backdrop>
+            <div class="backdrop is-hidden" data-backdrop>
                 <div class="modal">
                     <button class="modal-svg-closewindow">
                         <svg class="svg-close-icon" width="11px" height="11px">
@@ -138,7 +138,7 @@
                         <button class="link-button" type="submit" data-close-modal>Отправить</button>
                     </form>
                 </div>
-            </div> -->
+            </div>
 
             <!--Перечисление преимущетв-->
             <section class="container section-index-paddings">
@@ -515,5 +515,6 @@
             }
         </script> -->
         <script src="./js/menu.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
