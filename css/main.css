@@ -696,6 +696,7 @@ h4 {
 
 .menu-container {
   background-color: #ffffff;
+  z-index: 9999;
   font-size: 20px;
 }
 
