@@ -81,7 +81,9 @@
                         эффективные решения <br />
                         для вашего бизнеса
                     </h1>
-                    <button class="link-button" data-open-modal>Заказать услугу</button>
+                    <button class="link-button" data-open-modal>
+                        Заказать услугу
+                    </button>
                 </section>
             </div>
 
@@ -134,7 +136,9 @@
                             </label>
                         </div>
 
-                        <button class="link-button" type="submit" data-close-modal>Отправить</button>
+                        <button class="link-button" type="submit" data-close-modal>
+                            Отправить
+                        </button>
                     </form>
                 </div>
             </div>
@@ -224,10 +228,50 @@
                     <h2 class="main-header2-style">Наша команда</h2>
                     <ul class="list universal-list-item">
                         <li class="team-list-item">
-                            <img src="./images/john-smith.jpg" alt="John Smith" />
+                            <picture>
+                                <source srcset="./image/john-smith-mob.jpg 1x, ./image/john-smith-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                                <source srcset="./images/john-smith-desc.jpg 1x, ./image/john-smith-desc@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./images/john-smith-tab.jpg 1x, ./image/john-smith-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                                <img src="./images/john-smith.jpg" width="450" height="320" alt="Фото Николай Кучеренко" />
+                            </picture>
+
+                            <!-- <picture>
+                                <source
+                                    srcset="
+                                        ./images/john-smith-mob.jpg    1x,
+                                        ./images/john-smith-mob@2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                    media="(min-width: 480px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/john-smith-tab.jpg    1x,
+                                        ./images/john-smith-tab@2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                    media="(min-width: 768px)"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/john-smith-desc.jpg    1x,
+                                        ./images/john-smith-desc@2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                    media="(min-width: 1200px)"
+                                />
+
+                                <img
+                                    src="./images/john-smith-mob.jpg"
+                                    alt="John Smith"
+                                />
+                            </picture> -->
                             <div class="team-card">
                                 <h3 class="team-header-text">John Smith</h3>
-                                <p class="team-paragraph-text">Product Designer</p>
+                                <p class="team-paragraph-text">
+                                    Product Designer
+                                </p>
                                 <ul class="list team-socnetwork-list">
                                     <li class="team-socials-item">
                                         <a class="team-socials-link" href="https://www.instagram.com">
@@ -261,10 +305,12 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/marta-stewart.jpg" alt="Marta Stewart" />
+                            <img srcset="./images/marta-stewart.jpg 1x, ./images/marta-stewart@2x.jpg 2x" src="./images/marta-stewart.jpg" alt="Marta Stewart" />
                             <div class="team-card">
                                 <h3 class="team-header-text">Marta Stewart</h3>
-                                <p class="team-paragraph-text">Frontend Developer</p>
+                                <p class="team-paragraph-text">
+                                    Frontend Developer
+                                </p>
                                 <ul class="list team-socnetwork-list">
                                     <li class="team-socials-item">
                                         <a class="team-socials-link" href="https://www.instagram.com">
@@ -298,7 +344,7 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/robert-jakis.jpg" alt="Robert Jakis" />
+                            <img srcset="./images/robert-jakis.jpg 1x, ./images/robert-jakis@2x.jpg 2x" src="./images/robert-jakis.jpg" alt="Robert Jakis" />
                             <div class="team-card">
                                 <h3 class="team-header-text">Robert Jakis</h3>
                                 <p class="team-paragraph-text">Marketing</p>
@@ -335,7 +381,7 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/martin-doe.jpg" alt="Martin Doe" />
+                            <img srcset="./images/martin-doe.jpg 1x, ./images/martin-doe@2x.jpg 2x" src="./images/martin-doe.jpg" alt="Martin Doe" />
                             <div class="team-card">
                                 <h3 class="team-header-text">Martin Doe</h3>
                                 <p class="team-paragraph-text">UI Designer</p>
@@ -436,7 +482,9 @@
                         <span>Studio</span>
                     </a>
                     <address>
-                        <p class="footer-text-paragraph">г. Киев, пр-т Леси Украинки, 26</p>
+                        <p class="footer-text-paragraph">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </p>
                         <a class="footer-link-address" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         <a class="footer-link-address" href="tel:+380961111111">+38 096 111 11 11</a>
                     </address>
@@ -477,7 +525,9 @@
                 </div>
 
                 <div class="footer-subscribe">
-                    <h3 class="footer-header-subscribe">Подпишитесь на рассылку</h3>
+                    <h3 class="footer-header-subscribe">
+                        Подпишитесь на рассылку
+                    </h3>
                     <div>
                         <form class="footer-subscribe-form">
                             <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail" />
