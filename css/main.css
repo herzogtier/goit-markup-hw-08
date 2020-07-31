@@ -2246,12 +2246,21 @@ h4 {
 /*переменная для задания ширины вьюпорта ПК*/
 /*ПОДКЛЮЧЕНИЕ ТОЧЕК ПЕРЕЛОМА АДАПТИВНОЙ ВЕРСТКИ*/
 .project-section {
-  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .project-section {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
