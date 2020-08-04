@@ -39,8 +39,8 @@ h4 {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 31px;
+    padding-right: 31px;
 
     @media screen and(min-width: 480px) {
         width: 480px;
@@ -48,10 +48,14 @@ h4 {
 
     @media screen and(min-width: 768px) {
         width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
-    @media screen and(min-width: 1200px) {
-        width: 1200px;
+    @media screen and(min-width: 1280px) {
+        width: 1280px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
 }
 
@@ -140,7 +144,7 @@ h4 {
 // }
 
 /*Утилитарные классы стилей для иконок соцсетей*/
-.socials-link,
+
 .team-socials-link {
     display: flex;
     height: 44px;
@@ -148,31 +152,26 @@ h4 {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-}
-.socials-link {
-    color: $alternative-text-color;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #303030;
 
     &:hover,
     &:focus {
-        background-color: $main-accent-color;
-    }
-}
-
-.team-socials-link {
-    color: $default-socials-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: $main-accent-color;
-
         & .socials-icon {
-            fill: $alternative-text-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            fill: #ff6c00;
         }
     }
 }
+// .socials-link {
+//     color: $alternative-text-color;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         background-color: $main-accent-color;
+//     }
+// }
 
 /*Классы для описания свойств свг файлов иконок соцсетей*/
 .socials-icon {
