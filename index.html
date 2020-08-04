@@ -11,215 +11,9 @@
     </head>
 
     <body>
-        <!--Шапка страницы-->
-        <header>
-            <div class="container header-flex-container">
-                <!--Навигация сайта-->
-                <a href="./index.html" class="logo">
-                    <span class="logo-primary">Web</span>
-                    <span>Studio</span>
-                </a>
-                <nav class="nav">
-                    <div class="menu-container" id="menu-container" data-menu>
-                        <ul class="list header-link-list">
-                            <li class="header-link-item">
-                                <a class="current link-header-text" href="./index.html">
-                                    Студия
-                                </a>
-                            </li>
-                            <li class="header-link-item">
-                                <a class="link-header-text link-header-line" href="./portfolio.html">
-                                    Портфолио
-                                </a>
-                            </li>
-                            <li class="header-link-item">
-                                <a class="link-header-text link-header-line" href="">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
+      
+ 
 
-                        <div class="header-contact">
-                            <ul class="list header-contact-list">
-                                <li class="header-contact-item">
-                                    <a class="link-contact-text" href="mailto:info@devstudio.com">
-                                        <svg class="header-contact-icon" width="16px" height="11px">
-                                            <use href="./sprite.svg#icon-envelope"></use>
-                                        </svg>
-                                        info@devstudio.com
-                                    </a>
-                                </li>
-                                <li class="header-contact-item">
-                                    <a class="link-contact-text" href="tel:+380961111111">
-                                        <svg class="header-contact-icon" width="10px" height="15px">
-                                            <use href="./sprite.svg#icon-smartphone"></use>
-                                        </svg>
-                                        +38 096 111 11 11
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-controls="menu-container">
-                        <use class="icon-cross" href="./sprite.svg#icon-cross"></use>
-                        <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
-                    </svg>
-                </button>
-            </div>
-
-            <!--Контактные данные-->
-        </header>
-
-        <!--Главный блок страницы!-->
-
-        <main>
-            <div class="hero-container">
-                <section class="hero-section">
-                    <h1 class="hero-caption">
-                        эффективные решения <br />
-                        для вашего бизнеса
-                    </h1>
-                    <button class="link-button" data-open-modal>
-                        Заказать услугу
-                    </button>
-                </section>
-            </div>
-
-            <!-- Модальное окно "Сделать заказ" -->
-
-            <div class="backdrop is-hidden" data-backdrop>
-                <div class="modal">
-                    <button class="modal-svg-closewindow">
-                        <svg class="svg-close-icon" width="11px" height="11px">
-                            <use href="./sprite.svg#icon-closewindow"></use>
-                        </svg>
-                    </button>
-
-                    <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                    <form class="modal-form">
-                        <div class="modal-wrapper">
-                            <svg class="modal-svg" width="12px" height="12px">
-                                <use href="./sprite.svg#icon-persone"></use>
-                            </svg>
-                            <input class="modal-input" type="text" name="name" id="name" placeholder=" " />
-                            <label class="modal-label" for="name">Имя</label>
-                        </div>
-
-                        <div class="modal-wrapper">
-                            <svg class="modal-svg" width="12px" height="12px">
-                                <use href="./sprite.svg#icon-telephone"></use>
-                            </svg>
-
-                            <input class="modal-input" type="tel" name="tel" id="tel" placeholder=" " />
-                            <label class="modal-label" for="tel">Телефон</label>
-                        </div>
-
-                        <div class="modal-wrapper">
-                            <svg class="modal-svg" width="12px" height="12px">
-                                <use href="./sprite.svg#icon-email"></use>
-                            </svg>
-
-                            <input class="modal-input" type="email" name="email" id="email" placeholder=" " />
-                            <label class="modal-label" for="email">Почта</label>
-                        </div>
-                        <div class="modal-wrapper-comment">
-                            <textarea class="modal-textarea-comment" name="comment" rows="5" id="comment" placeholder=" "></textarea>
-                            <label class="comment-modal-label" for="comment">Коментарий</label>
-                        </div>
-
-                        <div class="modal-condition-wrapper">
-                            <label class="checkbox-field">
-                                <input class="checkbox visually-hidden" type="checkbox" name="condition" />
-                                <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю<a class="condition-link" href="">Условия договора</a> </span>
-                            </label>
-                        </div>
-
-                        <button class="link-button" type="submit" data-close-modal>
-                            Отправить
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <!--Перечисление преимущетв-->
-            <section class="container section-index-paddings">
-                <!-- <h2 class="main-header2-style">Наши преимущества (скрытый заголовок)</h2> -->
-                <!--Скрытый в будущем заголовок секции-->
-                <ul class="list universal-list-item">
-                    <li class="advantages-list-item">
-                        <div class="advantages-img-container">
-                            <svg width="70px" height="70px">
-                                <use href="./sprite.svg#icon-antenna"></use>
-                            </svg>
-                        </div>
-                        <h3>Внимание к деталям</h3>
-                        <p>
-                            Идейные соображения, а также начало повседневной работы по формированию позиции.
-                        </p>
-                    </li>
-                    <li class="advantages-list-item">
-                        <div class="advantages-img-container">
-                            <svg width="70px" height="70px">
-                                <use href="./sprite.svg#icon-clock-1"></use>
-                            </svg>
-                        </div>
-                        <h3>Пунктуальность</h3>
-                        <p>
-                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                        </p>
-                    </li>
-                    <li class="advantages-list-item">
-                        <div class="advantages-img-container">
-                            <svg width="70px" height="70px">
-                                <use href="./sprite.svg#icon-diagram-1"></use>
-                            </svg>
-                        </div>
-                        <h3>Планирование</h3>
-                        <p>
-                            Равным образом консультация с широким активом в значительной степени обуславливает.
-                        </p>
-                    </li>
-                    <li class="advantages-list-item">
-                        <div class="advantages-img-container">
-                            <svg width="70px" height="70px">
-                                <use href="./sprite.svg#icon-astronaut-1"></use>
-                            </svg>
-                        </div>
-                        <h3>Современные технологии</h3>
-                        <p>
-                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-            <!--Виды выполяемых работ-->
-
-            <section class="work container section-index-paddings">
-                <h2 class="main-header2-style">Чем мы занимаемся</h2>
-                <ul class="list universal-list-item">
-                    <li class="work-list-item">
-                        <div class="work-card">
-                            <img src="./images/img-desctop.jpg" alt="Ноутбук" />
-                            <p>Десктопные приложения</p>
-                        </div>
-                    </li>
-                    <li class="work-list-item">
-                        <div class="work-card">
-                            <img src="./images/img-mobile.jpg" alt="Смартфон" />
-                            <p>Мобильные приложения</p>
-                        </div>
-                    </li>
-                    <li class="work-list-item">
-                        <div class="work-card">
-                            <img src="./images/img-desine.jpg" alt="Экран дизайнера" />
-                            <p>Дизайнерские решения</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
 
             <!-- Секция Наша команда-->
 
@@ -228,60 +22,12 @@
                     <h2 class="main-header2-style">Наша команда</h2>
                     <ul class="list universal-list-item">
                         <li class="team-list-item">
-                            <!-- <img srcset="./images/john-smith-mob.jpg 1x, ./images/john-smith-mob@2x.jpg 2x, ./images/john-smith-tab.jpg 1x, ./images/john-smith-tab@2x.jpg 2x, ./images/john-smith-desc.jpg 1x, ./images/john-smith-desc@2x.jpg 2x" src="./images/john-smith-mob.jpg" alt="John Smith" /> -->
                             <picture>
                                 <source srcset="./images/john-smith-mob.jpg 1x, ./images/john-smith-mob@2x.jpg 2x" media="(max-width: 767px)" />
                                 <source srcset="./images/john-smith-desc.jpg 1x, ./images/john-smith-desc@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <source srcset="./images/john-smith-tab.jpg 1x, ./images/john-smith-tab@2x.jpg 2x" media="(min-width: 768px)" />
                                 <img src="./images/john-smith-mob.jpg" alt="Фото Джон Смит" />
                             </picture>
-
-                            <!-- <img
-                                srcset="
-                                    ./images/john-smith-desc.jpg    270w,
-                                    ./images/john-smith-tab.jpg     354w,
-                                    ./images/john-smith-mob.jpg     450w,
-                                    ./images/john-smith-desc@2x.jpg 540w,
-                                    ./images/john-smith-tab@2x.jpg  708w,
-                                    ./images/john-smith-mob@2x.jpg  900w
-                                "
-                                src="./images/john-smith-mob.jpg"
-                                alt="John Smith"
-                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw"
-                            /> -->
-
-                            <!-- <picture>
-                                <source
-                                    srcset="
-                                        ./images/john-smith-mob.jpg    1x,
-                                        ./images/john-smith-mob@2x.jpg 2x
-                                    "
-                                    type="image/jpg"
-                                    media="(min-width: 480px)"
-                                />
-                                <source
-                                    srcset="
-                                        ./images/john-smith-tab.jpg    1x,
-                                        ./images/john-smith-tab@2x.jpg 2x
-                                    "
-                                    type="image/jpg"
-                                    media="(min-width: 768px)"
-                                />
-
-                                <source
-                                    srcset="
-                                        ./images/john-smith-desc.jpg    1x,
-                                        ./images/john-smith-desc@2x.jpg 2x
-                                    "
-                                    type="image/jpg"
-                                    media="(min-width: 1200px)"
-                                />
-
-                                <img
-                                    src="./images/john-smith-mob.jpg"
-                                    alt="John Smith"
-                                />
-                            </picture> -->
                             <div class="team-card">
                                 <h3 class="team-header-text">John Smith</h3>
                                 <p class="team-paragraph-text">
@@ -324,7 +70,7 @@
                                 <source srcset="./images/marta-stewart-mob.jpg 1x, ./images/marta-stewart-mob@2x.jpg 2x" media="(max-width: 767px)" />
                                 <source srcset="./images/marta-stewart-desc.jpg 1x, ./images/marta-stewart-desc@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <source srcset="./images/marta-stewart-tab.jpg 1x, ./images/marta-stewart-tab@2x.jpg 2x" media="(min-width: 768px)" />
-                                <!-- <img src="./images/john-smith.jpg" width="450" height="320" alt="Фото Николай Кучеренко" /> -->
+
                                 <img src="./images/marta-stewart-mob.jpg" alt="Marta Stewart" />
                             </picture>
 
@@ -370,10 +116,9 @@
                                 <source srcset="./images/robert-jakis-mob.jpg 1x, ./images/robert-jakis-mob@2x.jpg 2x" media="(max-width: 767px)" />
                                 <source srcset="./images/robert-jakis-desc.jpg 1x, ./images/robert-jakis-desc@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <source srcset="./images/robert-jakis-tab.jpg 1x, ./images/robert-jakis-tab@2x.jpg 2x" media="(min-width: 768px)" />
-                                <!-- <img src="./images/john-smith.jpg" width="450" height="320" alt="Фото Николай Кучеренко" /> -->
+
                                 <img src="./images/robert-jakis-mob.jpg" alt="Robert Jakis" />
                             </picture>
-                            <!-- <img srcset="./images/robert-jakis.jpg 1x, ./images/robert-jakis@2x.jpg 2x" src="./images/robert-jakis.jpg" alt="Robert Jakis" /> -->
 
                             <div class="team-card">
                                 <h3 class="team-header-text">Robert Jakis</h3>
@@ -415,11 +160,9 @@
                                 <source srcset="./images/martin-doe-mob.jpg 1x, ./images/martin-doe-mob@2x.jpg 2x" media="(max-width: 767px)" />
                                 <source srcset="./images/martin-doe-desc.jpg 1x, ./images/martin-doe-desc@2x.jpg 2x" media="(min-width: 1200px)" />
                                 <source srcset="./images/martin-doe-tab.jpg 1x, ./images/martin-doe-tab@2x.jpg 2x" media="(min-width: 768px)" />
-                                <!-- <img src="./images/john-smith.jpg" width="450" height="320" alt="Фото Николай Кучеренко" /> -->
+
                                 <img src="./images/martin-doe-mob.jpg" alt="Martin Doe" />
                             </picture>
-
-                            <!-- <img srcset="./images/martin-doe.jpg 1x, ./images/martin-doe@2x.jpg 2x" src="./images/martin-doe.jpg" alt="Martin Doe" /> -->
 
                             <div class="team-card">
                                 <h3 class="team-header-text">Martin Doe</h3>
@@ -582,26 +325,6 @@
             </div>
         </footer>
 
-        <!-- <script>
-            const refs = {
-                openModalBtn: document.querySelector('[data-open-modal]'),
-                closeModalBtn: document.querySelector('[data-close-modal]'),
-                backdrop: document.querySelector('[data-backdrop]'),
-            };
-
-            refs.openModalBtn.addEventListener('click', toggleModal);
-            refs.closeModalBtn.addEventListener('click', toggleModal);
-
-            refs.backdrop.addEventListener('click', logBackdropClick);
-
-            function toggleModal() {
-                refs.backdrop.classList.toggle('is-hidden');
-            }
-
-            function logBackdropClick() {
-                console.log('Это клик в бекдроп');
-            }
-        </script> -->
         <script src="./js/menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
