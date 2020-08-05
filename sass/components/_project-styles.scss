@@ -1,4 +1,48 @@
-/*Задание цвета фона секции наша команда*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 31px;
+    padding-right: 31px;
+
+    @media screen and(min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and(min-width: 1280px) {
+        width: 1280px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+
+/*класс для свойств заголовков Н2 на странице индекс*/
+
+.main-header2-style {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-text-color;
+    margin-top: 0px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
+}
+
 .team-section {
     background-color: $team-section-bgr-color;
     padding-top: 84px;
@@ -82,7 +126,6 @@
     color: #ff6c00;
 }
 
-/*класс для флексы элементов списка соцсетей*/
 .team-socnetwork-list {
     display: flex;
     justify-content: center;
@@ -95,4 +138,30 @@
 .team-socials-item {
     width: auto;
     height: auto;
+}
+
+/*Утилитарные классы стилей для иконок соцсетей*/
+
+.team-socials-link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #303030;
+
+    &:hover,
+    &:focus {
+        & .socials-icon {
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            fill: #ff6c00;
+        }
+    }
+}
+
+.socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
